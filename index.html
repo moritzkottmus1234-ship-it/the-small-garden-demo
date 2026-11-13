@@ -7,7 +7,9 @@
   <meta name="description" content="The Small Garden in der Charlottenstraße 79–80, Berlin-Mitte: hausgemachte Mantı, frische Salate, Wraps und Kuchen. Mo–Do 8–16 Uhr, Fr 8–15 Uhr. Vor Ort, zum Mitnehmen und per Lieferung.">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#2c4636">
+  <meta property="og:image" content="images/innen-gaeste.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232c4636'/%3E%3Cpath d='M32 50V28' stroke='%23f7f2e8' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M32 34c-10 0-14-7-14-14 9 0 14 5 14 14zM32 30c0-9 5-15 14-15 0 8-5 15-14 15z' fill='%23f7f2e8'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="images/innen-gaeste.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,6 +22,7 @@
     "servesCuisine": ["Türkisch", "Mantı", "Salate", "Kuchen"],
     "priceRange": "€",
     "telephone": "+49 176 56337518",
+    "image": "images/innen-gaeste.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Charlottenstraße 79-80",
@@ -36,20 +39,10 @@
   }
   </script>
 </head>
-<body>
+<body class="has-photo-hero">
 <a class="skip" href="#main">Zum Inhalt springen</a>
 
-<div class="topbar">
-  <div class="container">
-    <div class="tb-left">
-      <span data-status><span class="status-dot"></span><span data-status-text>Mo–Do 8–16 · Fr 8–15 Uhr</span></span>
-      <a href="#anfahrt">Charlottenstraße 79–80, Berlin-Mitte</a>
-    </div>
-    <div class="tb-right"><a href="tel:+4917656337518">0176 56337518</a></div>
-  </div>
-</div>
-
-<header class="header">
+<header class="header header-overlay">
   <div class="container">
     <a class="brand" href="index.html" aria-label="The Small Garden – Startseite">
       <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#2c4636"/><path d="M32 50V28" stroke="#f7f2e8" stroke-width="2.6" stroke-linecap="round"/><path d="M32 34c-10 0-14-7-14-14 9 0 14 5 14 14zM32 30c0-9 5-15 14-15 0 8-5 15-14 15z" fill="#f7f2e8"/></svg>
@@ -63,7 +56,7 @@
       <a href="#ueber-uns">Über uns</a>
       <a href="speisekarte.html">Speisekarte</a>
       <a href="#anfahrt">Anfahrt</a>
-      <a class="btn btn-green btn-sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=The+Small+Garden,+Charlottenstra%C3%9Fe+79-80,+10117+Berlin" target="_blank" rel="noopener">Route planen</a>
+      <a class="btn btn-primary btn-sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=The+Small+Garden,+Charlottenstra%C3%9Fe+79-80,+10117+Berlin" target="_blank" rel="noopener">Route planen</a>
     </nav>
   </div>
 </header>
@@ -71,84 +64,31 @@
 <main id="main">
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <span class="eyebrow">Hausgemacht · Berlin-Mitte</span>
-        <h1>Ein kleiner Garten <em>mitten</em> in Berlin.</h1>
-        <p class="lead">Hausgemachte Mantı, frische Salate, Wraps und Kuchen aus dem eigenen Ofen – zum Frühstück, Mittag oder einfach zwischendurch. Fünf Minuten vom Checkpoint Charlie.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=The+Small+Garden,+Charlottenstra%C3%9Fe+79-80,+10117+Berlin" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
-            Route planen
-          </a>
-          <a class="btn btn-ghost" href="speisekarte.html">Zur Speisekarte</a>
-        </div>
-        <div class="hero-meta">
-          <span><span class="stars">★★★★★</span> <strong>4,8</strong> bei Google · 162 Bewertungen</span>
-          <span><strong>Vor Ort</strong>, zum Mitnehmen &amp; Lieferung</span>
-        </div>
+  <section class="photo-hero">
+    <img class="photo-hero-img" src="images/innen-gaeste.jpg" alt="Gäste im hellen Gastraum von The Small Garden mit grünen Hängepflanzen an der Decke" width="2000" height="1429" fetchpriority="high">
+    <div class="photo-hero-shade" aria-hidden="true"></div>
+    <div class="container photo-hero-inner">
+      <span class="hero-status" data-status><span class="status-dot"></span><span data-status-text>Mo–Do 8–16 · Fr 8–15 Uhr</span></span>
+      <h1 class="hero-name">The Small Garden</h1>
+      <p class="hero-tag">Hausgemachte Mantı, frische Salate &amp; Kuchen – mitten in Berlin.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=The+Small+Garden,+Charlottenstra%C3%9Fe+79-80,+10117+Berlin" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg>
+          Route planen
+        </a>
+        <a class="btn btn-light" href="speisekarte.html">Zur Speisekarte</a>
       </div>
-
-      <div class="hero-art" aria-hidden="true">
-        <div class="arch">
-          <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice">
-            <defs>
-              <radialGradient id="glow" cx="50%" cy="40%" r="60%"><stop offset="0" stop-color="#4f7a5e" stop-opacity=".55"/><stop offset="1" stop-color="#4f7a5e" stop-opacity="0"/></radialGradient>
-            </defs>
-            <rect width="400" height="420" fill="url(#glow)"/>
-            <!-- Zweige -->
-            <g fill="none" stroke="#cfe0cf" stroke-width="1.6" stroke-linecap="round" opacity=".9">
-              <path d="M60 420C90 320 110 230 190 150"/>
-              <path d="M340 420C320 330 300 250 230 180"/>
-              <path d="M200 420V250"/>
-            </g>
-            <g fill="#a9c7ad" opacity=".85">
-              <path d="M95 330c-30-6-45-28-44-52 28 4 44 24 44 52z"/>
-              <path d="M104 300c22-20 50-20 66-4-20 20-46 20-66 4z"/>
-              <path d="M128 240c-28-10-38-34-32-56 26 10 38 32 32 56z"/>
-              <path d="M140 220c20-22 48-26 66-12-18 22-44 26-66 12z"/>
-              <path d="M170 180c-18-22-16-46 2-62 16 22 14 46-2 62z"/>
-              <path d="M305 340c30-8 44-30 42-54-28 6-42 26-42 54z"/>
-              <path d="M298 310c-22-18-50-16-64 2 22 18 46 16 64-2z"/>
-              <path d="M276 250c28-12 36-36 30-58-26 12-36 34-30 58z"/>
-              <path d="M262 226c-22-20-50-22-66-6 20 20 46 22 66 6z"/>
-              <path d="M200 300c-24-14-30-40-20-60 22 14 28 38 20 60z"/>
-              <path d="M200 280c22-16 28-42 16-62-20 16-26 40-16 62z"/>
-            </g>
-            <!-- Teller mit Mantı -->
-            <g transform="translate(200 360)">
-              <ellipse cx="0" cy="14" rx="150" ry="34" fill="#1b2e22" opacity=".45"/>
-              <ellipse cx="0" cy="0" rx="146" ry="40" fill="#f7f2e8"/>
-              <ellipse cx="0" cy="-2" rx="112" ry="28" fill="#efe4cf"/>
-              <ellipse cx="0" cy="-2" rx="96" ry="22" fill="#e9b18a" opacity=".55"/>
-              <g fill="#fbf3e2" stroke="#d8c3a0" stroke-width="1.2">
-                <path d="M-70 -6c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-                <path d="M-40 -14c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-                <path d="M-10 -8c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-                <path d="M20 -16c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-                <path d="M46 -4c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-                <path d="M-54 6c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-                <path d="M-22 6c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-                <path d="M12 6c6-12 18-12 24 0-6 8-18 8-24 0z"/>
-              </g>
-              <g fill="#b5653f"><circle cx="-30" cy="-2" r="2.4"/><circle cx="4" cy="-14" r="2"/><circle cx="34" cy="0" r="2.4"/><circle cx="-60" cy="2" r="1.8"/><circle cx="58" cy="-10" r="2"/></g>
-              <g fill="#5d8a5f"><circle cx="-14" cy="2" r="2"/><circle cx="24" cy="-6" r="1.8"/><circle cx="-46" cy="-8" r="1.6"/></g>
-            </g>
-          </svg>
-        </div>
-        <div class="hero-badge" data-status>
-          <div class="t">Öffnungsstatus</div>
-          <div class="v" data-status-text>Mo–Do 8–16 Uhr</div>
-        </div>
+      <div class="hero-facts">
+        <span><span class="stars">★★★★★</span> <strong>4,8</strong> · 162 Google-Bewertungen</span>
+        <span>Charlottenstraße 79–80 · Berlin-Mitte</span>
       </div>
     </div>
   </section>
 
   <!-- ÖFFNUNGSZEITEN + ROUTE -->
-  <section class="info" id="oeffnungszeiten">
+  <section class="info info-lift" id="oeffnungszeiten">
     <div class="container info-grid">
-      <article class="card reveal">
+      <article class="card">
         <div class="card-head">
           <div>
             <span class="eyebrow">Wann</span>
@@ -170,7 +110,7 @@
         <p class="card-note">An Feiertagen können die Zeiten abweichen – im Zweifel kurz anrufen: <a href="tel:+4917656337518">0176 56337518</a></p>
       </article>
 
-      <article class="card reveal" id="route">
+      <article class="card" id="route">
         <div class="card-head">
           <div>
             <span class="eyebrow">Wo</span>
@@ -197,15 +137,19 @@
   <!-- ÜBER UNS -->
   <section class="section" id="ueber-uns">
     <div class="container about-grid">
-      <div class="quote-block reveal">
-        <blockquote>„Alle sind sehr freundlich und helfen bei der Riesenauswahl von leckerem Essen.“</blockquote>
-        <cite>Aus den Bewertungen unserer Gäste</cite>
-        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 60V28" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><path d="M32 34c-10 0-14-7-14-14 9 0 14 5 14 14zM32 30c0-9 5-15 14-15 0 8-5 15-14 15z" fill="#fff"/></svg>
+      <div class="collage reveal">
+        <figure class="collage-main"><img src="images/innen-theke.jpg" alt="Heller Gastraum mit Holztheke, Vitrinen und Hängepflanzen" loading="lazy" width="1400" height="1050"></figure>
+        <figure class="collage-small"><img src="images/tee-kuchen.jpg" alt="Türkischer Tee und ein Stück hausgemachter Kuchen" loading="lazy" width="1000" height="1200"></figure>
+        <div class="collage-badge">
+          <span class="num">4,8</span>
+          <span><span class="stars">★★★★★</span><br>162 Bewertungen</span>
+        </div>
       </div>
       <div class="reveal">
         <span class="eyebrow">Über uns</span>
-        <h2 style="font-size:clamp(38px,5vw,58px)">Klein im Raum,<br>groß in der Auswahl.</h2>
-        <p style="color:var(--muted);font-size:18px;margin-top:20px">The Small Garden ist ein gemütliches kleines Lokal in der Friedrichstadt. Wir kochen jeden Tag frisch – mit Rezepten aus der türkischen Hausküche, viel Gemüse und ehrlichen Zutaten. Ob schnelles Mittagessen im Büroalltag, ein Stück Kuchen zum Kaffee oder ein Frühstück mit Müsli: Bei uns fühlen Sie sich wie bei Freunden.</p>
+        <h2 class="about-title">Klein im Raum,<br><em>groß</em> in der Auswahl.</h2>
+        <p class="about-lead">The Small Garden ist ein gemütliches kleines Lokal in der Friedrichstadt. Wir kochen jeden Tag frisch – mit Rezepten aus der türkischen Hausküche, viel Gemüse und ehrlichen Zutaten. Ob schnelles Mittagessen im Büroalltag, ein Stück Kuchen zum Tee oder ein Frühstück mit Müsli: Bei uns fühlen Sie sich wie bei Freunden.</p>
+        <blockquote class="about-quote">„Alle sind sehr freundlich und helfen bei der Riesenauswahl von leckerem Essen.“<cite>Aus den Bewertungen unserer Gäste</cite></blockquote>
         <div class="features">
           <div class="feature"><span class="num">i.</span><h3>Mantı, hausgemacht</h3><p>Kleine gefüllte Teigtaschen – mit Rind, Kartoffel oder Spinat-Käse, auch im Dinkelteig.</p></div>
           <div class="feature"><span class="num">ii.</span><h3>Vegetarisch &amp; vegan</h3><p>Eine große Auswahl ohne Fleisch – von Falafel bis Gemüsepuffer.</p></div>
@@ -213,6 +157,16 @@
           <div class="feature"><span class="num">iv.</span><h3>Hausgebacken</h3><p>Karotten-Walnuss, Lemon Cake, Banana Bread – täglich frisch.</p></div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- VITRINE BAND -->
+  <section class="band reveal">
+    <img src="images/vitrine.jpg" alt="Vitrine mit Börek, Hummus, Salaten und Gemüsepuffern" loading="lazy" width="1600" height="900">
+    <div class="band-shade" aria-hidden="true"></div>
+    <div class="container band-inner">
+      <span class="eyebrow eyebrow-light">Jeden Tag frisch</span>
+      <p>Börek, Hummus, bunte Salate und Gemüsepuffer – direkt aus unserer Vitrine.</p>
     </div>
   </section>
 
@@ -225,25 +179,48 @@
       </div>
       <div class="dish-grid">
         <article class="dish reveal">
-          <svg class="plate" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#fbf8f2" stroke="#d9cfbd"/><circle cx="60" cy="60" r="40" fill="#efd3b9"/><g fill="#fbf3e2" stroke="#cdb48c" stroke-width="1"><path d="M36 52c4-9 13-9 17 0-4 6-13 6-17 0z"/><path d="M56 44c4-9 13-9 17 0-4 6-13 6-17 0z"/><path d="M66 62c4-9 13-9 17 0-4 6-13 6-17 0z"/><path d="M42 70c4-9 13-9 17 0-4 6-13 6-17 0z"/></g><g fill="#b5653f"><circle cx="58" cy="58" r="2"/><circle cx="48" cy="62" r="1.6"/><circle cx="74" cy="52" r="1.6"/></g><g fill="#5d8a5f"><circle cx="64" cy="72" r="1.6"/><circle cx="40" cy="60" r="1.4"/></g></svg>
-          <h3>Mantı</h3>
-          <p>Die Spezialität des Hauses – mit Topping, Zutat und Soße nach Wahl. Fünf Sorten, darunter Rote-Bete-Rind und Spinat-Käse.</p>
-          <span class="price">12,90 €</span>
+          <div class="dish-img"><img src="images/gericht-manti-rind.jpg" alt="Mantı mit Tomatensoße und Joghurt" loading="lazy" width="720" height="720"></div>
+          <div class="dish-body">
+            <h3>Mantı</h3>
+            <p>Die Spezialität des Hauses – mit Topping, Zutat und Soße nach Wahl. Fünf Sorten, darunter Rote-Bete-Rind und Spinat-Käse.</p>
+            <span class="price">12,90 €</span>
+          </div>
         </article>
         <article class="dish reveal">
-          <svg class="plate" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#fbf8f2" stroke="#d9cfbd"/><circle cx="60" cy="60" r="40" fill="#dfe7dc"/><g fill="#7ea67f"><path d="M40 50c-6-8-2-16 8-16 2 8-2 14-8 16z"/><path d="M76 46c4-9 12-10 16-4-4 7-10 8-16 4z"/><path d="M58 80c-8-2-11-10-6-16 6 4 8 10 6 16z"/></g><g fill="#c9473c"><circle cx="66" cy="62" r="5"/><circle cx="48" cy="66" r="4"/></g><g fill="#e8b84a"><circle cx="70" cy="76" r="2"/><circle cx="74" cy="72" r="2"/><circle cx="56" cy="50" r="2"/></g><g fill="#8a2442"><circle cx="62" cy="44" r="1.8"/><circle cx="80" cy="60" r="1.8"/><circle cx="44" cy="78" r="1.8"/></g></svg>
-          <h3>Bunte Salate</h3>
-          <p>Blattsalat, Gurke, Kirschtomaten, Rotkohl, Mais und Granatapfel – mit Hähnchen, Falafel, Couscous-Feta oder Gemüsepuffern.</p>
-          <span class="price">9,90 €</span>
+          <div class="dish-img"><img src="images/gericht-salat-haehnchen.jpg" alt="Bunter Salat mit Hähnchen, Rucola, Karotten und Mais" loading="lazy" width="720" height="720"></div>
+          <div class="dish-body">
+            <h3>Bunte Salate</h3>
+            <p>Blattsalat, Gurke, Kirschtomaten, Rotkohl, Mais und Granatapfel – mit Hähnchen, Falafel, Couscous-Feta oder Gemüsepuffern.</p>
+            <span class="price">9,90 €</span>
+          </div>
         </article>
         <article class="dish reveal">
-          <svg class="plate" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#fbf8f2" stroke="#d9cfbd"/><path d="M30 72l30-32 30 32z" fill="#d79a5c"/><path d="M30 72h60v10H30z" fill="#b97a3e"/><path d="M34 66h52" stroke="#f7f2e8" stroke-width="3"/><path d="M42 56h36" stroke="#f7f2e8" stroke-width="2.5"/><circle cx="60" cy="40" r="4" fill="#c9473c"/></svg>
-          <h3>Hausgemachter Kuchen</h3>
-          <p>Karotte-Walnuss, Lemon Cake oder Almond-Banana-Bread – dazu ein frischer Kaffee oder türkischer Tee.</p>
-          <span class="price">4,90 €</span>
+          <div class="dish-img"><img src="images/gericht-kuchen-karotte.jpg" alt="Hausgemachter Karotten-Walnuss-Kuchen" loading="lazy" width="720" height="720"></div>
+          <div class="dish-body">
+            <h3>Hausgemachter Kuchen</h3>
+            <p>Karotte-Walnuss, Lemon Cake oder Almond-Banana-Bread – dazu ein frischer Kaffee oder türkischer Tee.</p>
+            <span class="price">4,90 €</span>
+          </div>
         </article>
       </div>
       <div class="dish-foot reveal"><a class="btn btn-green" href="speisekarte.html">Ganze Speisekarte ansehen</a></div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section class="section gallery-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Einblicke</span>
+        <h2>So schmeckt’s bei uns</h2>
+      </div>
+      <div class="gallery reveal">
+        <figure class="g-a"><img src="images/manti-tisch.jpg" alt="Mantı mit Tomatensoße auf einem Teller mit grünem Rand" loading="lazy"></figure>
+        <figure class="g-b"><img src="images/gericht-manti-rotebete.jpg" alt="Rote-Bete-Mantı mit Oliven und Spinat" loading="lazy"></figure>
+        <figure class="g-c"><img src="images/boerek-salat.jpg" alt="Börek mit Rucola und Joghurt auf der Terrasse" loading="lazy"></figure>
+        <figure class="g-d"><img src="images/gericht-lemoncake.jpg" alt="Hausgemachter Lemon Cake" loading="lazy"></figure>
+        <figure class="g-e"><img src="images/gericht-linsensuppe.jpg" alt="Linsensuppe mit Zitrone und Brot" loading="lazy"></figure>
+      </div>
     </div>
   </section>
 
